@@ -25,7 +25,11 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|svg|xml|mp3)$/i,
         type: "asset/resource",
-      }
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ]
   },
   plugins: [
@@ -38,6 +42,6 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./index.html"
-    })
+    }),
   ]
 };

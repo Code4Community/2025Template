@@ -4,6 +4,9 @@ import Phaser from 'phaser';
 import Scene1 from './scenes/scene1';
 import Scene2 from './scenes/scene2';
 
+// Load style.css into our page
+import './assets/style.css'
+
 
 const gameWidth = 800;
 const gameHeight = 600;
