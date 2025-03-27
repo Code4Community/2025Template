@@ -1,5 +1,5 @@
 # 2025Template
-This is a template for using phaser and c4clib
+This is a template for using phaser and c4clib.  If you make a project from this, the only things you should have to edit are `README.md`, `index.html`, and the things inside the `src/` directory.
 
 # Running
 To run this, make sure you have Node.js installed.  
