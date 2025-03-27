@@ -1,3 +1,5 @@
+# This code here deploys your project to GitHub Pages when enabled
+
 name: Deploy to GitHub Pages with npm build
 
 on:

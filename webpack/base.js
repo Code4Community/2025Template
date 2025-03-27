@@ -41,7 +41,9 @@ module.exports = {
       WEBGL_RENDERER: JSON.stringify(true)
     }),
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: "./index.html",
+      // This is the icon next to the tab name.  You can change it if you want
+      favicon: "./src/assets/favicon.ico"
     }),
   ]
 };
