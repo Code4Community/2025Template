@@ -42,7 +42,10 @@ export default class Scene1 extends Phaser.Scene {
             this.character.setVelocityX(speed);
             // Stop after 1 game loop
             setTimeout(() => {
-                this.character.setVelocityX(0);
+                // This could fail if we switch scenes
+                try {
+                    this.character.setVelocityX(0);
+                } catch (e){};
             }, gameLoopSpeed);
 
         })
@@ -54,7 +57,9 @@ export default class Scene1 extends Phaser.Scene {
             this.character.setVelocityX(-speed);
             // Stop after 1 game loop
             setTimeout(() => {
-                this.character.setVelocityX(0);
+                try {
+                    this.character.setVelocityX(0);
+                } catch (e){};
             }, gameLoopSpeed);
         })
 
